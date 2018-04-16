@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5b0c5cee603d249b270751f6cbe90b, type: 3}
+  m_Name: Suspect
+  m_EditorClassIdentifier: 
+  actions: []
+  onEnterActions:
+  - {fileID: 11400000, guid: b359eb07dabebc4469871527a2b9d129, type: 2}
+  - {fileID: 11400000, guid: b8202bbe06f10a240b9073fb581d5eec, type: 2}
+  onExitActions: []
+  transitions:
+  - decision: {fileID: 11400000, guid: ed97aba06959d9a44938a06d05d74b9b, type: 2}
+    trueState: {fileID: 11400000, guid: 511d36d81627139439133cc338e672dc, type: 2}
+    falseState: {fileID: 11400000, guid: b2d2def434e17a143982f0412c257263, type: 2}
+  - decision: {fileID: 11400000, guid: c436732df5ef1314389737718871ee8c, type: 2}
+    trueState: {fileID: 11400000, guid: 072e77dc56847dc4ca91ffc833dae22d, type: 2}
+    falseState: {fileID: 11400000, guid: 511d36d81627139439133cc338e672dc, type: 2}
+  sceneGizmoColor: {r: 0.37880328, g: 1, b: 0.08088237, a: 1}
