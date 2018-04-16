@@ -1,0 +1,1 @@
+To run the project code, use runmobacompetition.py to run different Minion types against each other. Example calls are:> python runmobacompetition.py MyMinion MyMinion> python runmobacompetition.py MyMinion BaselineMinion> python runmobacompetition.py BaselineMinion BaselineMinion

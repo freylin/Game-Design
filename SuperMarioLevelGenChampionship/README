@@ -1,0 +1,10 @@
+Step 1: Acquire and install Apache Ant (http://ant.apache.org/).
+
+Step 2: In the root directory, build the game engine:
+> ant
+
+Step 3: Access to the four player profiles: 
+> java -cp bin dk.itu.mario.engine.PlayCustomized Scrooge
+> java -cp bin dk.itu.mario.engine.PlayCustomized Jumper
+> java -cp bin dk.itu.mario.engine.PlayCustomized Killer
+> java -cp bin dk.itu.mario.engine.PlayCustomized KillerCollector
