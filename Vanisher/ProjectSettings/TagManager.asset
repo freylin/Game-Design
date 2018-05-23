@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - LeftHandHold
+  - LeftHand
+  - Police
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - 
   - 
   - Smoke Screen
-  - 
+  - Map Pointer
   - 
   - 
   - 

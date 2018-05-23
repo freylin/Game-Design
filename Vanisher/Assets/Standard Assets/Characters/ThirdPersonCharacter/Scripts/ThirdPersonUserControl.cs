@@ -12,6 +12,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
+        private bool m_Crouch;                    // use crouch mode or not, press 'c' to toggle
 
         [SerializeField] private bool controllable;
 
@@ -33,6 +34,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Character = GetComponent<ThirdPersonCharacter>();
 
             controllable = true;
+            m_Crouch = false;
         }
 
         private void Update()
@@ -41,6 +43,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_Jump = controllable && CrossPlatformInputManager.GetButtonDown("Jump");
             }
+
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                m_Crouch = !m_Crouch;
+            }
+
         }
 
         // Fixed update is called in sync with physics
@@ -49,7 +57,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // read inputs
             float h = controllable ? CrossPlatformInputManager.GetAxis("Horizontal") : 0;
             float v = controllable ? CrossPlatformInputManager.GetAxis("Vertical") : 0;
-            bool crouch = controllable && Input.GetKey(KeyCode.C);
+
+            
+            bool crouch = controllable && m_Crouch;
 
             // calculate move direction to pass to character
             if (m_Cam != null)

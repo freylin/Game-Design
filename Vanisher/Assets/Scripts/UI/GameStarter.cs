@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameStarter : MonoBehaviour {
+	public string level = "";
 
 	public void StartGame() {
+        Debug.Log("start game");
 		Time.timeScale = 1f;
-		SceneManager.LoadScene ("Level0");
+		SceneManager.LoadScene (level);
 	}
 }
