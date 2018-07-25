@@ -1,5 +1,5 @@
 ## Introduction
-Vanisher is a stealth game. The player controls a thief. To win, the thief must go to the destination without being catched by the guards. The thief can simply hide behind obstacles and crouch towards the destination. The thief have some special skills to help him escape. For example, the thief can distract the guards and make the guards lose clear vision.
+Vanisher is a stealth game. The player controls a thief. To win, the thief must go to the destination without being caught by the guards. The thief can simply hide behind obstacles and crouch towards the destination. The thief have some special skills to help him escape. For example, the thief can distract the guards and make the guards lose clear vision.
 
 ## How to Play
 Press 'w/s/a/d' to move the thief.
