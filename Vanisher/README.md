@@ -16,7 +16,7 @@ Press '3' to sprint.
 
 ## How to Observe Technology Requirements
 ### Character Animation
-The thief is animated using a fairly complex animation bleed tree. Transitions between different animations are smooth. Please play with character movement using w/s/a/d/c.
+The thief is animated using a fairly complex animation blend tree. Transitions between different animations are smooth. Please play with character movement using w/s/a/d/c.
 
 ### AI
 A powerful AI system (finite state machine) is installed in every guard in the game. The spherical indicator above each guard indicates the currect state (patrol/suspect/chase/search) that the guard is in. 
